@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Eassay Tutor(Jason)</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>AI Eassay Tutor(Jason)</h1>
+        <div class="story-form">
+            <div class="form-group">
+                <label for="theme">Theme:</label>
+                <select id="theme">
+                    <option value="Letters">Letters</option>
+                    <option value="Speach">Speach</option>
+                    <option value="Argument Eassay">Argument Eassay</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="setting">Writing Topic:</label>
+                <input type="text" id="setting" placeholder="e.g., Medieval castle, Space station">
+            </div>
+
+            <div class="form-group">
+                <label for="plot">My Writing:</label>
+                <textarea id="My Writing" placeholder="Please write an eassay about the topics"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="characters">Characters:</label>
+                <input type="text" id="characters" placeholder="Main character descriptions">
+            </div>
+
+            <div class="form-group">
+                <label for="length">Story Length:</label>
+                <select id="length">
+                    <option value="short - 300 words">Short</option>
+                    <option value="medium - 500 words">Medium</option>
+                    <option value="long - 1000 words">Long</option>
+                </select>
+            </div>
+
+            <button onclick="generateStory()">Generate Story</button>
+
+        </div>
+
+        <div class="story-output">
+            <h2>Your Story</h2>
+            <div id="story-text">
+                <p class="placeholder">Your generated story will appear here...</p>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
